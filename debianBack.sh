@@ -138,7 +138,7 @@ echo "
 <VirtualHost *:8181>
     ServerAdmin webmaster@$pagina.com
     DocumentRoot /var/www/webdav
-    ServerName www.$pagina.com
+    ServerName $pagina.com
     Alias /webdav /var/www/webdav
 
     <Directory /var/www/webdav>
@@ -177,7 +177,7 @@ echo "   http://$pagina.com"
 echo ""
 echo "   Pagina webdav en:"
 echo "   http://$laip/webdav"
-echo "   http://$pagina/webdav.com"
+echo "   http://$pagina.com:8181/webdav"
 
 
 sleep 10
